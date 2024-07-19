@@ -1,0 +1,10 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoApp.MainPage">
+    <StackLayout Padding="20">
+        <Entry x:Name="DirectionEntry" Placeholder="Enter direction (N, NE, E, SE, S, SW, W, NW)" />
+        <Entry x:Name="DistanceEntry" Placeholder="Enter distance (meters)" Keyboard="Numeric" />
+        <Button Text="Start Navigation" Clicked="OnStartNavigationClicked" />
+        <BoxView x:Name="DirectionIndicator" HeightRequest="200" WidthRequest="200" Color="Gray" />
+    </StackLayout>
+</ContentPage>
